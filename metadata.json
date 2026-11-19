@@ -1,0 +1,6 @@
+{
+  "name": "Mobilive Arcade",
+  "description": "Social gaming arcade for live streaming, multiplayer lobbies, LAN world hosting, communities, clips, and rewards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
