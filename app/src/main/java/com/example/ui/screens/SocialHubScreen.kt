@@ -13,6 +13,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Chat
 import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -189,7 +190,7 @@ fun SocialHubScreen(
                                                     viewModel.createChat(player.displayName, false, listOf(player))
                                                     activeTab = 1
                                                 }) {
-                                                    Icon(Icons.Default.Chat, contentDescription = "Message", tint = NeonCyan)
+                                                    Icon(Icons.AutoMirrored.Filled.Chat, contentDescription = "Message", tint = NeonCyan)
                                                 }
                                             } else if (player.allowFriendRequests) {
                                                 Button(
@@ -231,7 +232,7 @@ fun SocialHubScreen(
                                         horizontalArrangement = Arrangement.spacedBy(12.dp)
                                     ) {
                                         Icon(
-                                            if (chat.groupChat) Icons.Default.Groups else Icons.Default.Chat,
+                                            if (chat.groupChat) Icons.Default.Groups else Icons.AutoMirrored.Filled.Chat,
                                             contentDescription = null,
                                             tint = NeonCyan
                                         )
